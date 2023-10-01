@@ -108,4 +108,37 @@ mark.calcBMI()
 
 console.log(`${john.fullName}'s BMI (${Math.floor(john.bmi)}) is ${john.bmi > mark.bmi ? "higher" : "lower"} than ${mark.fullName}'s BMI (${Math.floor(mark.bmi)})!`);
 
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep}`);
+};
 
+const barbaraArrey = [
+    "Barbara",
+    "Marku",
+    "lover",
+    ["Fili", "Alfi", "Zsolti"],
+    true
+];
+
+const types = [];
+
+for (let i = 0; i < barbaraArrey.length; i++) {
+    //reading from barbaraArrey
+    console.log(barbaraArrey[i]);
+    //filling types arrey
+    //types[i] = typeof barbaraArrey[i];
+    types.push(typeof barbaraArrey[i])
+}
+
+console.log(types);
+
+const years = [1991, 1987, 1966, 1952];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+
+    ages.push(new Date().getFullYear() - years[i]);
+
+}
+
+console.log(ages);
