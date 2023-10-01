@@ -115,8 +115,10 @@ for (let rep = 1; rep <= 10; rep++) {
 const barbaraArrey = [
     "Barbara",
     "Marku",
+    1987,
     "lover",
     ["Fili", "Alfi", "Zsolti"],
+    2017,
     true
 ];
 
@@ -142,3 +144,18 @@ for (let i = 0; i < years.length; i++) {
 }
 
 console.log(ages);
+
+//continue & break
+console.log("---ONLY STRINGS---");
+for (let i = 0; i < barbaraArrey.length; i++) {
+    if (typeof barbaraArrey[i] !== "string") continue;
+
+    console.log(barbaraArrey[i], typeof barbaraArrey[i]);
+};
+
+console.log("---BREAK WITH NUMBERS---");
+for (let i = 0; i < barbaraArrey.length; i++) {
+    if (typeof barbaraArrey[i] === "number") break;
+
+    console.log(barbaraArrey[i], typeof barbaraArrey[i]);
+};
