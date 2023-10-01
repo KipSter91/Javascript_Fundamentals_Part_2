@@ -159,3 +159,7 @@ for (let i = 0; i < barbaraArrey.length; i++) {
 
     console.log(barbaraArrey[i], typeof barbaraArrey[i]);
 };
+
+for (let i = barbaraArrey.length-1; i >= 0; i--) {
+    console.log(i, barbaraArrey[i]);
+}
