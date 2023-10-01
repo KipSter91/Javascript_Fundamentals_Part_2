@@ -160,6 +160,20 @@ for (let i = 0; i < barbaraArrey.length; i++) {
     console.log(barbaraArrey[i], typeof barbaraArrey[i]);
 };
 
-for (let i = barbaraArrey.length-1; i >= 0; i--) {
+//looping backwards
+for (let i = barbaraArrey.length - 1; i >= 0; i--) {
     console.log(i, barbaraArrey[i]);
 }
+
+//loops in loops
+for (let excersize = 1; excersize < 5; excersize++) {
+    console.log(`Doing excersize Nr.${excersize}:`);
+
+    for (let rep = 1; rep < 9; rep++) {
+        if (rep <= 1) {
+            console.log(`${rep} reputation.`);
+        } else {
+            console.log(`${rep} reputations.`);
+        };
+    };
+};
